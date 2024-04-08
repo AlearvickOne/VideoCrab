@@ -1,0 +1,58 @@
+.form {
+  flex: 1;
+
+  .search-input {
+    position: relative;
+    z-index: 2;
+    width: 25em;
+    margin: 0 auto;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: -0.2em;
+      width: 100%;
+      height: 125%;
+      z-index: -1;
+
+      background-color: black;
+      border-radius: 5px;
+    }
+
+    input {
+      width: 20em;
+      height: 2em;
+      background: none;
+      border: none;
+      margin-right: 1em;
+      outline: none;
+
+      &:hover,
+      &:focus {
+        border-bottom: 1px solid white;
+      }
+    }
+
+    .search-icon {
+      width: 1rem;
+      opacity: 70%;
+      margin-right: 0.3em;
+    }
+
+    button {
+      background-color: rgb(31, 30, 30);
+      border: none;
+      border-radius: 5px;
+      width: 6em;
+
+      &:active {
+        transform: scale(0.9);
+      }
+    }
+  }
+
+  .flex-center {
+    display: flex;
+    justify-content: center;
+  }
+}

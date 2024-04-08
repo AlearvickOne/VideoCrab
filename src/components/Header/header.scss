@@ -1,0 +1,19 @@
+.header {
+  background-color: #2e2e2e;
+  border-bottom: 2px solid rgb(85, 85, 85);
+  height: 4em;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .title-header {
+    margin-left: 1em;
+    font-size: 2em;
+    font-weight: 100;
+
+    background: linear-gradient(45deg, rgb(31, 32, 100), rgb(33, 176, 219), rgb(181, 24, 212), rgb(236, 152, 24));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}

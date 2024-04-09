@@ -1,0 +1,41 @@
+.video_feeds {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-top: 10em;
+
+  .flex {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .video-author,
+  .video-music,
+  .video-title {
+    position: absolute;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 20em;
+  }
+
+  .video-author {
+    top: 2em;
+  }
+
+  .video-music {
+    bottom: 4.5em;
+  }
+
+  .video-title {
+    bottom: 2em;
+  }
+
+  .video-wrapper {
+    video {
+      width: 25em;
+    }
+  }
+}
